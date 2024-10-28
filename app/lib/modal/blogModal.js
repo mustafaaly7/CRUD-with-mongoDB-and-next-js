@@ -14,7 +14,7 @@ const blogSchema = new mongoose.Schema({
 // then we create model which is known as the collection where we give the collection name and our schema 
 
 
-const blogModal = mongoose.model.Blogs || mongoose.model("Blogs", blogSchema) // now this condition says that if mongoose.modal.blogs exist store it in blog modal else create one and store it 
+const blogModal = mongoose.models.Blogs || mongoose.model("Blogs", blogSchema) // now this condition says that if mongoose.modal.blogs exist store it in blog modal else create one and store it 
 
 
 export default blogModal
